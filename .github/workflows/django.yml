@@ -27,5 +27,6 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install --upgrade icmplib
     - name: Run Tests
+      working-directory: MonitoringTool_v2
       run: |
         python test_MonitoringTool_v2.py test
