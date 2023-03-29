@@ -1,5 +1,5 @@
 import unittest
-from MonitoringTool import *
+from MonitoringTool_v2 import *
 
 class test_MonitoringTool_v2 (unittest.Testcase):
 
