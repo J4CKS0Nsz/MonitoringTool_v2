@@ -6,8 +6,8 @@ def test_cpu_usage():
     assert get_current_cpu_usage_pct() <= 100
     
 def test_ram_usage():
-    assert get_current_cpu_usage_pct() >= 0
-    assert get_current_cpu_usage_pct() <= 100
+    assert get_current_ram_usage_pct() >= 0
+    assert get_current_ram_usage_pct() <= 100
     
 def test_send_mail():
     mail_message = "Testnachricht"
