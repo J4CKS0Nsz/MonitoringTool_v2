@@ -26,4 +26,4 @@ jobs:
         python -m pip install --upgrade pip
     - name: Run Tests
       run: |
-        python test_MonitoringTool_v2.py test
+        python MonitoringTool_v2/MonitoringTool_v2/test_MonitoringTool_v2.py test
