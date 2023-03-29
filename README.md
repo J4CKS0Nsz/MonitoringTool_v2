@@ -17,3 +17,5 @@ Kevin: CD-Pipeline und Tests (Pipeline habe ich über Django versucht, ist aber 
 Nina: Sequenz- und Struktogramm
 
 Kevin: Zu Testzwecken habe ich die Dateien MonitoringTool.ini, MonitoringTool_v2.py, MonitoringTool_v2.pyproj, test_MonitoringTool_v2.py aus ihrem Unterordner (TestMonitoringTool_v2) geholt. Ich habe gelesen, dass die Pipeline sonst nicht funktioniert. Es gibt 2 .yml files da sich die actions aufgehängt haben. Ich habe erhofft dass die zweite Django Datei unabhängig von der ersten läuft.. sieht aber nicht so aus 
+
+test
