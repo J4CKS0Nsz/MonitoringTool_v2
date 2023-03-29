@@ -1,6 +1,8 @@
 import unittest
 from MonitoringTool import *
 
+class test_MonitoringTool_v2 (unittest.Testcase):
+
 def test_cpu_usage():
     assert get_current_cpu_usage_pct() >= 0
     assert get_current_cpu_usage_pct() <= 100
