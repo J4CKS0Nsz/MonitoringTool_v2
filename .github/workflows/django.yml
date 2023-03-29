@@ -23,9 +23,10 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install Dependencies
       run: |
-        python -m pip install --upgrade psutil
-        python -m pip install --upgrade pip
-        python -m pip install --upgrade icmplib
+        sudo pip install psutil
+        sudo python -m pip install --upgrade psutil
+        sudo python -m pip install --upgrade pip
+        sudo python -m pip install --upgrade icmplib
     - name: Run Tests
       working-directory: MonitoringTool_v2
       run: |
