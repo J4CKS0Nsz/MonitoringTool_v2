@@ -29,4 +29,4 @@ jobs:
     - name: Run Tests
       working-directory: MonitoringTool_v2
       run: |
-        python test_MonitoringTool_v2.py test
+        sudo python test_MonitoringTool_v2.py test
