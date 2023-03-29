@@ -4,6 +4,7 @@ from configparser import ConfigParser as configparser
 from smtplib import SMTP_SSL as smtp_ssl
 from psutil import cpu_percent, virtual_memory, disk_usage
 from icmplib import ping, exceptions as pingexc
+import os
 
 
 ##READCONFIG
@@ -17,7 +18,7 @@ conf_mail_to = conf.get("alertmail", "to")
 conf_cpu_warn_maxpct = conf.getfloat("cpu", "warn_maxpct")
 conf_ram_warn_maxpct = conf.getfloat("ram", "warn_maxpct")
 conf_ram_warn_maxmb = conf.getint("ram", "warn_maxmb")
-conf_disk_path = conf.get("disk", "checkpath")
+conf_disk_path = os.path.sep ##conf.get("disk", "checkpath")
 conf_disk_warn_maxpct = conf.getfloat("disk", "warn_maxpct")
 conf_disk_warn_maxgb = conf.getint("disk", "warn_maxgb")
 conf_network_ping_address = conf.get("network", "ping_address")
