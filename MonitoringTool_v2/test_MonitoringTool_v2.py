@@ -3,9 +3,9 @@ from MonitoringTool import *
 
 class test_MonitoringTool_v2 (unittest.Testcase):
 
-def test_cpu_usage():
-    assert get_current_cpu_usage_pct() >= 0
-    assert get_current_cpu_usage_pct() <= 100
+def test_cpu_usage(self):
+    self.assertGreaterEqual(get_current_cpu_usage_pct(), 0)
+    self.assertLessEqual(get_current_cpu_usage_pct(), 100)
     
 def test_ram_usage():
     assert get_current_ram_usage_pct() >= 0
